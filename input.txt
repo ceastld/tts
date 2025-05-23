@@ -1,0 +1,23 @@
+Recent advances in diffusion models have made significant progress in digital human generation. However, most existing models still struggle to maintain 3D consistency, temporal coherence, and motion accuracy.
+
+Most recent diffusion models employ landmarks, normal maps, or depth maps as signals to control the generation of digital humans. Despite some successes achieved by these approaches, we observe that their results still suffer from deficiencies in 3D consistency and expression accuracy. 
+
+These deficiencies in the generation results are closely related to the control signals used by these diffusion models. For example, the information of landmarks is too sparse, making it hard to capture detailed facial muscle movements or accurately describe head poses. Depth maps and normal maps only represent specific geometric attributes and are inherently camera-dependent, lacking 3D consistency. When such 3D inconsistent control signals are introduced into diffusion, the inconsistency in the generation results is further amplified.
+
+Except for the influence of control signals, existing datasets lack sufficient identity or pose information, which limits the performance of the model.
+
+In this paper, we construct a powerful head model from both aspects by constructing learnable control signals and enabling the model to adaptively leverage synthetic data.
+
+Previous works primarily rely on talking head datasets for training, but most talking head videos contain limited pose or expression variations. In this work, we employ SphereHead to generate a large-scale dataset with diverse poses and identities. 
+
+We first track the FLAME coefficients of the driving frames. Then the learnable Gaussians in UV space are transformed to 3D space according to FLAME UV mapping. Subsequently, the transformed Gaussians are projected and splatted to serve as control signals for a reference-guided diffusion model.
+
+The feature maps in each transformer block of ReferenceNet are injected into the corresponding blocks of the denoising branch via shared attention.
+
+Crucially, we introduce a learnable real/synthetic embedding, which enables the model to adaptively differentiate and leverage both real and synthetic data during training.
+
+Given a single reference image, we can freely control the camera to synthesize view-consistent head images.
+
+without training on our synthetic dataset, the model may fail to synthesize head images in large poses. And if the model is trained without Real/Synthetic labels, the artifacts of the synthesized samples may influence the generated results.
+
+Our learnable Gaussian feature map is a dense, adaptive, expressive, and 3D consistent control signal representation. It showcased better quality in controlling head motion generation.
