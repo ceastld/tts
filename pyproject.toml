@@ -1,0 +1,17 @@
+[project]
+name = "eleven_tts_project"
+version = "0.1.0"
+description = "A project to use ElevenLabs TTS"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.8"
+dependencies = [
+    "elevenlabs>=1.0.0,<2.0.0",
+    "python-dotenv>=0.20.0",
+]
+
+[project.scripts]
+process-text = "eleven_tts_project.process_text:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta" 
