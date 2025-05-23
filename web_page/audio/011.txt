@@ -1,0 +1,1 @@
+without training on our synthetic dataset, the model may fail to synthesize head images in large poses. And if the model is trained without Real/Synthetic labels, the artifacts of the synthesized samples may influence the generated results.

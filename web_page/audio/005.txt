@@ -1,0 +1,1 @@
+In this paper, we construct a powerful head model from both aspects by constructing learnable control signals and enabling the model to adaptively leverage synthetic data.

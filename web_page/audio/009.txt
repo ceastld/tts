@@ -1,0 +1,1 @@
+Crucially, we introduce a learnable real/synthetic embedding, which enables the model to adaptively differentiate and leverage both real and synthetic data during training.

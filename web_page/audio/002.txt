@@ -1,0 +1,1 @@
+Most recent diffusion models employ landmarks, normal maps, or depth maps as signals to control the generation of digital humans. Despite some successes achieved by these approaches, we observe that their results still suffer from deficiencies in 3D consistency and expression accuracy.

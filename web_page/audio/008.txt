@@ -1,0 +1,1 @@
+The feature maps in each transformer block of ReferenceNet are injected into the corresponding blocks of the denoising branch via shared attention.

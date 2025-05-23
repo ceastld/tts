@@ -1,0 +1,1 @@
+Our learnable Gaussian feature map is a dense, adaptive, expressive, and 3D consistent control signal representation. It showcased better quality in controlling head motion generation.

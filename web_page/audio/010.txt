@@ -1,0 +1,1 @@
+Given a single reference image, we can freely control the camera to synthesize view-consistent head images.

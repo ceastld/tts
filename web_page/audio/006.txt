@@ -1,0 +1,1 @@
+Previous works primarily rely on talking head datasets for training, but most talking head videos contain limited pose or expression variations. In this work, we employ SphereHead to generate a large-scale dataset with diverse poses and identities.

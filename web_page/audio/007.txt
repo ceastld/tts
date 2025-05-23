@@ -1,0 +1,1 @@
+We first track the FLAME coefficients of the driving frames. Then the learnable Gaussians in UV space are transformed to 3D space according to FLAME UV mapping. Subsequently, the transformed Gaussians are projected and splatted to serve as control signals for a reference-guided diffusion model.
